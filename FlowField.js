@@ -70,7 +70,7 @@ class Effect {
     this.width = width;
     this.height = height;
     this.particles = [];
-    this.numberOfParticles = 500;
+    this.numberOfParticles = 700;
     this.cellSize = 20;
     this.rows;
     this.cols;
@@ -115,4 +115,6 @@ function animate() {
   requestAnimationFrame(animate);
 }
 
-animate();
+setTimeout(() => {
+  animate();
+}, 2000);
